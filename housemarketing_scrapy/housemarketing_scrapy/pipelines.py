@@ -19,9 +19,10 @@ class SaveToMySqlPipeline:
         # self.cur.execute("""
         #     DROP TABLE IF EXISTS house_advertisements
         # """)
-        # CREATE TABLE IF NOT EXISTS house_advertisements_cleaned_data(
+        # house_advertisements_cleaned_data
+        # avito_house_advertisements_cleaned_data
         self.cur.execute("""
-            CREATE TABLE IF NOT EXISTS avito_house_advertisements_cleaned_data(
+            CREATE TABLE IF NOT EXISTS house_advertisements_cleaned_data(
             id int NOT NULL auto_increment,
             advertisement_url VARCHAR(255),
             title VARCHAR(255),
@@ -39,7 +40,7 @@ class SaveToMySqlPipeline:
     def process_item(self, item, spider):
 
         ## Define insert statement
-        self.cur.execute(""" insert into avito_house_advertisements_cleaned_data (
+        self.cur.execute(""" insert into house_advertisements_cleaned_data (
             advertisement_url,
             title,
             publication_date,
