@@ -19,10 +19,14 @@ class SaveToMySqlPipeline:
         # self.cur.execute("""
         #     DROP TABLE IF EXISTS house_advertisements
         # """)
-        # house_advertisements_cleaned_data
+        
         # avito_house_advertisements_cleaned_data
+
+        # house_advertisements_cleaned_data # mubawab_sales
+        # mubawab_vacation_rental
+        # mubawab_rental
         self.cur.execute("""
-            CREATE TABLE IF NOT EXISTS house_advertisements_cleaned_data(
+            CREATE TABLE IF NOT EXISTS mubawab_rental(
             id int NOT NULL auto_increment,
             advertisement_url VARCHAR(255),
             title VARCHAR(255),
@@ -32,7 +36,7 @@ class SaveToMySqlPipeline:
             description TEXT,
             complete_description TEXT,
             features_list VARCHAR(255),
-            insert_date DATE DEFAULT (CURRENT_DATE),
+            insert_date TIMESTAMP DEFAULT (CURRENT_TIMESTAMP),
             PRIMARY KEY (id)
             )
         """)
@@ -40,7 +44,7 @@ class SaveToMySqlPipeline:
     def process_item(self, item, spider):
 
         ## Define insert statement
-        self.cur.execute(""" insert into house_advertisements_cleaned_data (
+        self.cur.execute(""" insert into mubawab_rental (
             advertisement_url,
             title,
             publication_date,

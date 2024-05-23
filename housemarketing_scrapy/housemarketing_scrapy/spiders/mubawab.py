@@ -5,7 +5,9 @@ from scrapy.loader import ItemLoader
 class MubawabSpider(scrapy.Spider):
     name = "mubawab"
     allowed_domains = ["www.mubawab.ma"]
-    start_urls = ["https://www.mubawab.ma/fr/sc/appartements-a-vendre"]
+    # start_urls = ["https://www.mubawab.ma/fr/sc/appartements-a-vendre"]
+    # start_urls = ["https://www.mubawab.ma/fr/cc/immobilier-vacational"]
+    start_urls = ["https://www.mubawab.ma/fr/cc/immobilier-a-louer"]
 
 
     def parse(self, response):
