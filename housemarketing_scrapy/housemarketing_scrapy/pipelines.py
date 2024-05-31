@@ -20,11 +20,11 @@ class SaveToMySqlPipeline:
         #     DROP TABLE IF EXISTS house_advertisements
         # """)
         
-        # avito_house_advertisements_cleaned_data
-
-        # house_advertisements_cleaned_data # mubawab_sales
-        # mubawab_vacation_rental
-        # mubawab_rental
+        # Tables :
+        # --> avito
+        # --> mubawab_sales
+        # --> mubawab_vacation_rental
+        # --> mubawab_rental
         self.cur.execute("""
             CREATE TABLE IF NOT EXISTS mubawab_rental(
             id int NOT NULL auto_increment,

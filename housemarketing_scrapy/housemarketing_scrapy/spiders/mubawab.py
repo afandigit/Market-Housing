@@ -60,7 +60,7 @@ class MubawabSpider(scrapy.Spider):
         try:
             l.add_xpath('title', '//h1[@class="searchTitle"]')
         except:
-            l.add_xpath('title', '')
+            l.add_value('title', '')
 
         try:
             l.add_xpath('price', '//h3[@class="orangeTit"]')
