@@ -1,5 +1,4 @@
-![sale-sold-hand-signature-c4f2784a22e29601b6011a9e268398ec](https://github.com/afandigit/Market-Housing/assets/106676180/0d9a697a-564c-4dc6-a102-55e689372542)![sale-sold-hand-signature-c4f2784a22e29601b6011a9e268398ec](https://github.com/afandigit/Market-Housing/assets/106676180/0d9a697a-564c-4dc6-a102-55e689372542)![sale-sold-hand-signature-c4f2784a22e29601b6011a9e268398ec](https://github.com/afandigit/Market-Housing/assets/106676180/b7b3ab34-d34b-4574-9922-df905fe66be3)
-
+![sale-sold-hand-signature-c4f2784a22e29601b6011a9e268398ec](https://github.com/afandigit/Market-Housing/assets/106676180/0d9a697a-564c-4dc6-a102-55e689372542)
 
 <h1>Market Housing Project</h1>
 <br/>
@@ -88,7 +87,8 @@ this dataset contains more than 14000 records (Each record represent the data sc
 
 
 <h2>Data Cleaning</h2>
-![data-preparation-1-570x350](https://github.com/afandigit/Market-Housing/assets/106676180/7a45a64d-03f2-4039-9b12-15126ab828eb)
+
+![datacleaning](https://github.com/afandigit/Market-Housing/assets/106676180/7a45a64d-03f2-4039-9b12-15126ab828eb)
 
 
 
