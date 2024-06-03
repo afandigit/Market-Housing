@@ -1,4 +1,7 @@
-![image](https://github.com/afandigit/Market-Housing/assets/106676180/d45c0ce4-5a38-4021-a82a-a2879b270023)<h1>Market Housing Project</h1>
+![sale-sold-hand-signature-c4f2784a22e29601b6011a9e268398ec](https://github.com/afandigit/Market-Housing/assets/106676180/0d9a697a-564c-4dc6-a102-55e689372542)![sale-sold-hand-signature-c4f2784a22e29601b6011a9e268398ec](https://github.com/afandigit/Market-Housing/assets/106676180/0d9a697a-564c-4dc6-a102-55e689372542)![sale-sold-hand-signature-c4f2784a22e29601b6011a9e268398ec](https://github.com/afandigit/Market-Housing/assets/106676180/b7b3ab34-d34b-4574-9922-df905fe66be3)
+
+
+<h1>Market Housing Project</h1>
 <br/>
 <hr/>
 
@@ -49,7 +52,7 @@ this dataset contains more than 14000 records (Each record represent the data sc
       <td>Which is the full URL of the page in the website on which i retrieve detailed information on the current real estate announcement.</td>
     </tr>
     <tr>
-      <td<b>title</b>></td>
+      <td><b>title</b></td>
       <td>The title of the property advertisement.</td>
     </tr>
     <tr>
@@ -85,7 +88,8 @@ this dataset contains more than 14000 records (Each record represent the data sc
 
 
 <h2>Data Cleaning</h2>
-![data-preparation-1-570x350](https://github.com/afandigit/Market-Housing/assets/106676180/f0e0cfe2-acb0-4b0f-bd67-4f0f3915a3d0)
+![data-preparation-1-570x350](https://github.com/afandigit/Market-Housing/assets/106676180/7a45a64d-03f2-4039-9b12-15126ab828eb)
+
 
 
 <h4>Cleaning Process .... </h4>
@@ -103,7 +107,7 @@ Results : we found 3848 duplicate records.
   <li>
     Cleaning <b>title</b> column --> Adding three new columns based on the current one and supported by <b>feature_list</b> and <b>price</b> columns; 'ad_type' column, 'property_type' column and 'property_surface' column + Analyzing all titles by counting the most appeared words + analyzing the new 'property_surface' column.
     
-    <ul> 
+    <ol> 
     
       <li>
         <b>Ad_type column</b> is gonna indicate the type of advertisment; <i>Sale</i>, <i>Rental</i> or <i>Vocation Rental</i>.
@@ -129,9 +133,9 @@ Results : we found 3848 duplicate records.
         </p>
       </li>
       
-    </ul>
-    
+    </ol>
   </li>
+  
   <li>
     Cleaning <b>publication_date</b> and <b>insert_date</b> column --> Adding year, month, day of publication columns based on current column.
     sometimes when we start the scrap we encounter some ads that are published in the current day and the publication date is mentionned as "publié aujourd'hui, but while the spider continue scrapping ads, we encounter for some ads that publish day was yesterday or even some couple of days ago or months, so we need to store as well the date of scrap 'insert_date' to calculate later the real date of the ûblication, which is the diffirence between them."
