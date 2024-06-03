@@ -15,10 +15,10 @@ This project aims to enhance the user experience and optimize the property searc
 ------------------------------------------------------------------------
 ## Features :
 
-- Web Scraping : Scrapy Framework. [Current step ...]
-- Data Cleaning. [Current step ...]
-- Data Analysis - Explore and Visualize data : Python libraries - Microsoft Power BI. [Future step ...]
-- MERN Stack. [Future step ...]
+- Web Scraping : Scrapy Framework. [Done]
+- Data Cleaning. [Done]
+- Data Analysis - Explore and Visualize data : Python libraries - Microsoft Power BI. [Done]
+- MERN Stack. [Current step ...]
 - Data Preparation for Machine Learning : Data standardization and preprocessing. [Future step ...]
 - Machine Learning. [Future step ...]
 - Deploy the trained recommendation model in real time. [Future step ...]
