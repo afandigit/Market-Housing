@@ -32,9 +32,7 @@ This project aims to enhance the user experience and optimize the property searc
 
 <h2>Dataset</h2>
 
-I have been scrapping this dataset using Scrapy Framework for couples days ( mores than 50 hours in general), on two real estate websites in Morroco (Avito - Mubawab) (each website has its specific Spider), just to start using data cleaning process so that i can automate this process in the future.
-my goal is to scale this dataset for the entire world, Scrapping the most common Real Estate Websites in the world.
-this dataset contains more than 14000 records (Each record represent the data scrapped from an Ad of a real estate website).
+I have been scraping this dataset using the Scrapy framework for several days, totaling more than 50 hours, from two real estate websites in Morocco (Avito and Mubawab). Each website has its specific Spider. This initial data scraping is to kickstart the data cleaning process, which I plan to automate in the future. My goal is to scale this dataset to include the most common real estate websites worldwide. Currently, the dataset contains over 14,000 records, with each record representing data scraped from an individual real estate ad.
 
 <h3>Dataset description</h3>
 
