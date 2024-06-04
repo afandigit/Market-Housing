@@ -93,7 +93,7 @@ I have been scraping this dataset using the Scrapy framework for several days, t
 <ol>
   
   <li>
-    First step i commit is that i <strong>remove</strong> duplicates records, so as not to distort our analysis in the future. <i>Because in practice, some people repost their real estate ads multiple times on these websites, causing them to appear multiple times for visitors.</i>
+    First step i commit is that i <b>remove</b> duplicates records, so as not to distort our analysis in the future. <i>Because in practice, some people repost their real estate ads multiple times on these websites, causing them to appear multiple times for visitors.</i>
 Results : we found 3848 duplicate records.
   </li>
   
