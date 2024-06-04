@@ -87,8 +87,7 @@ this dataset contains more than 14000 records (Each record represent the data sc
 
 
 <h2>Data Cleaning</h2>
-
-![datacleaning](https://github.com/afandigit/Market-Housing/assets/106676180/7a45a64d-03f2-4039-9b12-15126ab828eb)
+<img align="right"  width="400" src="https://github.com/afandigit/Market-Housing/assets/106676180/7a45a64d-03f2-4039-9b12-15126ab828eb" alt="cleaning" /> 
 
 
 
