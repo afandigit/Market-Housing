@@ -90,78 +90,29 @@ I have been scraping this dataset using the Scrapy framework for several days, t
 
 
 <h4>Cleaning Process .... </h4>
-<ol>
-  
-  <li>
-    First step i commit is that i <b>remove</b> duplicates records, so as not to distort our analysis in the future. <i>Because in practice, some people repost their real estate ads multiple times on these websites, causing them to appear multiple times for visitors.</i>
-Results : we found 3848 duplicate records.
-  </li>
-  
-  <li>
-    Cleaning <b>advertisement_url</b> column --> Adding "website_name" column based on current column and Visualizing the number of records per website name.
-  </li>
-  
-  <li>
-    Cleaning <b>title</b> column --> Adding three new columns based on the current one and supported by <b>feature_list</b> and <b>price</b> columns; 'ad_type' column, 'property_type' column and 'property_surface' column + Analyzing all titles by counting the most appeared words + analyzing the new 'property_surface' column.
-    
-    <ol> 
-    
-      <li>
-        <b>Ad_type column</b> is gonna indicate the type of advertisment; <i>Sale</i>, <i>Rental</i> or <i>Vocation Rental</i>.
-        <br/>
-        <p>
-          if you notice bellow in the Analysis part, specificly in the visual which describe the count of words, we found in title or description columns that the ad owner might write the type of ad properly like "rental" or "appartment for sale" but i found a lot of mistake in termes of grammers, so i decide to deeply analyse the title and description ... and after that analysis i create normalize dictionnaries of words for each type that a person might enter.
-        </p>
-      </li>
-      
-      <li>
-        <b>property_type column</b> indicate one of these categories, <i>Apartments</i>, <i>Villas and Riads</i>, <i>Houses</i>, <i>Rooms</i>, <i>Land and Farms</i>, <i>Desks</i>, <i>Flatsharing</i>, <i>Warehouses</i> or <i>Other Real Estate</i>.
-        <br/>
-        <p>
-          Sometime the price of rentals real estate expressed as "xxxx DH par jour", "xxxx DH/jour", "xxxx DH/night", "xxxx DH/day" ... so based on the price we could classify the ad as vacation rental category.
-        </p>
-      </li>
-      
-      <li>
-        <b>property_surface column</b> indicate the surface of the property (m²).
-        <br/>
-        <p>
-          we check title first, then features list then description for surface format, which is " xxxx m²" or "xxx م". in some cases, the ad owner dont mension the unit "m²" which make it hard for me to scrap it, but after deep analysis i found that these kind of pepole indicate their surface are in feature list in the "Surface habitable" category, for example : "[ ...... ;Âge du bien;Neuf;<b>Surface habitable;55</b>;Étage;4; ....]".
-        </p>
-      </li>
-      
-    </ol>
-  </li>
-  
-  <li>
-    Cleaning <b>publication_date</b> and <b>insert_date</b> column --> Adding year, month, day of publication columns based on current column.
-    sometimes when we start the scrap we encounter some ads that are published in the current day and the publication date is mentionned as "publié aujourd'hui, but while the spider continue scrapping ads, we encounter for some ads that publish day was yesterday or even some couple of days ago or months, so we need to store as well the date of scrap 'insert_date' to calculate later the real date of the ûblication, which is the diffirence between them."
-  </li>
-  <li>
-    Cleaning <b>price</b> column --> adding 'property_price', 'price_currency', 'price per priod (for rental ad)' columns based on the current one.
-  </li>
-  <li>
-    Cleaning <b>location</b> column --> i keep this column but i clean it.
-    <br/>
+
+1. First step i commit is that i **remove** duplicates records, so as not to distort our analysis in the future. *Because in practice, some people repost their real estate ads multiple times on these websites, causing them to appear multiple times for visitors*.
+- Results : we found 3848 duplicate records.
+2. Cleaning **advertisement_url** column --> Adding "website_name" column based on current column and Visualizing the number of records per website name.
+3. Cleaning **title** column --> Adding three new columns based on the current one and supported by **feature_list** and **price** columns; 'ad_type' column, 'property_type' column and 'property_surface' column + Analyzing all titles by counting the most appeared words + analyzing the new 'property_surface' column.
+   1. **Ad_type column** is gonna indicate the type of advertisment; *Sale*, *Rental* or *Vocation Rental*.
+      - if you notice bellow in the Analysis part, specificly in the visual which describe the count of words, we found in title or description columns that the ad owner might write the type of ad properly like "rental" or "appartment for sale" but i found a lot of mistake in termes of grammers, so i decide to deeply analyse the title and description ... and after that analysis i create normalize dictionnaries of words for each type that a person might enter.
+   2. **property_type column** indicate one of these categories, *Apartments*, *Villas and Riads*, *Houses*, *Rooms*, *Land and Farms*, *Desks*, *Flatsharing*, *Warehouses* or *Other Real Estate*.
+      - Sometime the price of rentals real estate expressed as "xxxx DH par jour", "xxxx DH/jour", "xxxx DH/night", "xxxx DH/day" ... so based on the price we could classify the ad as vacation rental category.
+   3. **property_surface column** indicate the surface of the property (m²).
+      - we check title first, then features list then description for surface format, which is " xxxx m²" or "xxx م". in some cases, the ad owner dont mension the unit "m²" which make it hard for me to scrap it, but after deep analysis i found that these kind of pepole indicate their surface are in feature list in the "Surface habitable" category, for example : "[ ...... ;Âge du bien;Neuf;<b>Surface habitable;55</b>;Étage;4; ....]".
+4. Cleaning **publication_date** and **insert_date** column --> Adding year, month, day of publication columns based on current column.
+   - sometimes when we start the scrap we encounter some ads that are published in the current day and the publication date is mentionned as "publié aujourd'hui, but while the spider continue scrapping ads, we encounter for some ads that publish day was yesterday or even some couple of days ago or months, so we need to store as well the date of scrap 'insert_date' to calculate later the real date of the publication, which is the diffirence between them."
+5. Cleaning **price** column --> adding 'property_price', 'price_currency', 'price per priod (for rental ad)' columns based on the current one.
+6. Cleaning **location** column --> i keep this column but i clean it.
     - sometimes i notice that there is some unnecessary details in the location an this is can distort out analysis after, for example some ads have 'Secteur Touristique à Agadir' as location but othors have 'Agadir' and there are the same location but couputer consider them different. so we need to remove the unnecessary details on them.
-    <br/>
     - usually ads owners do not spell well the location (city) name well, for example :
-    <ul>
-      <li>'laäyoune' --> 'laayoune'</li>
-      <li>'asilah' --> 'assilah'</li>
-      <li>'béni yakhlef' --> 'Ben Yakhlef'</li>
-      <li> etc ...</li>
-    </ul>
-  </li>
-  <br/>
-  so i have created manually a disctionnary to normalize all cities names that are not correctly wrotten by ads owner. then i used a json file which include all cities name in frensh and arabic version, so i can transform all arabic cities name to frensh. 
-  
-  <li>
-    Cleaning <b>features_list</b> column --> Adding 'number of rooms' column, cause it is one of the most meaningful insight from this list of property descriptions is: the number of rooms, after what we extract earlier.
-  </li>
-</ol>
-
-
+     - 'laäyoune' --> 'laayoune'
+     - 'asilah' --> 'assilah'
+     - 'béni yakhlef' --> 'Ben Yakhlef'
+     - etc...
+   - so i have created manually a disctionnary to normalize all cities names that are not correctly wrotten by ads owner. then i used a json file which include all cities name in frensh and arabic version, so i can transform all arabic cities name to frensh. 
+7. Cleaning **features_list** column --> Adding 'number of rooms' column, cause it is one of the most meaningful insight from this list of property descriptions is: the number of rooms, after what we extract earlier.
 
 
 
