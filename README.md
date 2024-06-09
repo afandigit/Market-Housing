@@ -165,7 +165,8 @@ and in term of property type, appartments is the biggest category sold or rent i
 <h3> Dashboard number 2 </h3>
 <p>This dashboard gives you a general idea of the property market in terms of surface area and average room for each type of property in each city.</p>
 <br/>
-![Capture d’écran 2024-06-03 222203](https://github.com/afandigit/Market-Housing/assets/106676180/bf057f42-886d-4f51-9467-d59da2d25aa6)
+![336244540-bf057f42-886d-4f51-9467-d59da2d25aa6](https://github.com/afandigit/Market-Housing/assets/106676180/19111511-e897-4449-89c5-3a3fef924e5d)
+
 
 
 <br/><br/>
