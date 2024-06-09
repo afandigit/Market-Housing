@@ -160,20 +160,19 @@ and in term of property type, appartments is the biggest category sold or rent i
 
 <br/>
 <p>BUT !!! if we select <b>agadir</b> apartments that have between 100 and 120 m² in their surface for example, we notice that Mubawab has best prices compares to Avito in terms of Rental or Sales but Avito still good if we wanna rent an apartment for Vacations.</p>
-
+<br/>
+<img src="https://private-user-images.githubusercontent.com/106676180/337988846-eaf75bad-793e-419a-9619-eec19bcc63e2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc5NDg5MDMsIm5iZiI6MTcxNzk0ODYwMywicGF0aCI6Ii8xMDY2NzYxODAvMzM3OTg4ODQ2LWVhZjc1YmFkLTc5M2UtNDE5YS05NjE5LWVlYzE5YmNjNjNlMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwOVQxNTU2NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMThhYzYzZDFhYjk4MTIxNTljODQzNmZiYTZlZjhkOWI1YTA4N2Q4OWNkMzgxYmE1ZWVkZjY2YjdlNDU1MDEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Hf9p_IxR4wtZy3QaLmb_EC8euN0XGFXEmNJn8Q4jdcc" />
 <br/><br/>
+
 <h3> Dashboard number 2 </h3>
 <p>This dashboard gives you a general idea of the property market in terms of surface area and average room for each type of property in each city.</p>
 <br/>
-<img src="https://private-user-images.githubusercontent.com/106676180/337988846-eaf75bad-793e-419a-9619-eec19bcc63e2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc5NDg5MDMsIm5iZiI6MTcxNzk0ODYwMywicGF0aCI6Ii8xMDY2NzYxODAvMzM3OTg4ODQ2LWVhZjc1YmFkLTc5M2UtNDE5YS05NjE5LWVlYzE5YmNjNjNlMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwOVQxNTU2NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMThhYzYzZDFhYjk4MTIxNTljODQzNmZiYTZlZjhkOWI1YTA4N2Q4OWNkMzgxYmE1ZWVkZjY2YjdlNDU1MDEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Hf9p_IxR4wtZy3QaLmb_EC8euN0XGFXEmNJn8Q4jdcc" />
-
-
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/d30dab2e-057c-4a4e-aa09-d1ca0e815053"/>
 
 <br/><br/>
 <h3> Dashboard number 3 </h3
 <p> If I want to invest my money, I can easily choose where and from which platform I can buy for a lower price with the same features. </p>
-<br/>
-<img src="https://github.com/afandigit/Market-Housing/assets/106676180/d30dab2e-057c-4a4e-aa09-d1ca0e815053"/>
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/9b7a151b-d49e-4f84-b602-2685839b8f47"/>
 <br/>
 <h3 style="color:red;">Chart Improvement ... </h3>
 <br/>
