@@ -122,11 +122,11 @@ I have been scraping this dataset using the Scrapy framework for several days, t
 
 * Avito 25.73% higher than Mubawab in terms of records in this dataset. and the most 
 
-![image](https://github.com/afandigit/Market-Housing/assets/106676180/4e6a8771-a4e2-4c3d-a378-90da1ed2cd31)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/4e6a8771-a4e2-4c3d-a378-90da1ed2cd31" />
 
 and in term of property type, appartments is the biggest category sold or rent in the Moroccan market. 
 
-![frequency of each property type ](https://github.com/afandigit/Market-Housing/assets/106676180/55152bfc-1718-4657-98ea-0bce946d3be0)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/55152bfc-1718-4657-98ea-0bce946d3be0" />
 <br/>
 <h3 style="color:red;">Chart Improvement ... </h3>
 <br/>
@@ -134,26 +134,26 @@ and in term of property type, appartments is the biggest category sold or rent i
 <br/>
 <p>Instead of using a Chart Line to compare the number of ads over time, we use the slop graphic, which shows the degree of variation over time in terms of the number of scrapped ads.</p>
 
-![Capture d’écran 2024-06-09 010711](https://github.com/afandigit/Market-Housing/assets/106676180/3ef899eb-e592-4ebc-a3c2-4d1dbe3c7040)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/3ef899eb-e592-4ebc-a3c2-4d1dbe3c7040" />
 <br/>
-![Capture d’écran 2024-06-09 010741](https://github.com/afandigit/Market-Housing/assets/106676180/ddfb7548-d1df-4b3b-ba2e-71972573bd1c)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/ddfb7548-d1df-4b3b-ba2e-71972573bd1c" />
 
 <br/>
 * The majority of properties have a surface area between 50 m² and 175 m².
 <br/>
 
-![télécharg](https://github.com/afandigit/Market-Housing/assets/106676180/ca22cafb-6a2b-49f1-8e9e-0d3bd9c687b3)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/ca22cafb-6a2b-49f1-8e9e-0d3bd9c687b3" />
 
 * The average room number in this dataset is:
 <br/>
 
-![téléchar](https://github.com/afandigit/Market-Housing/assets/106676180/6c326945-3f2d-4231-b212-786d3f4fbb4e)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/6c326945-3f2d-4231-b212-786d3f4fbb4e" />
 
 <h3> Dashboard number 1 </h3>
 <p> In this dashboard, i compare the statistics measures between the two website Avito and Mubawab, including Max sale of a specific type of real etate, in our case here for <b>apartments</b> per website and per location, but in our case here we just select the max sale of apartments in all Morocco that have the surface betwwen 100 and 200 m².</p>
 
 
-![Capture d’écran 2024-06-03 220536](https://github.com/afandigit/Market-Housing/assets/106676180/42c5bd84-58c4-4fd2-944d-619c93bd787b)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/42c5bd84-58c4-4fd2-944d-619c93bd787b" />
 
 <br/>
 <p>In Sale category, we notice that Avito is the best market to search for apartement for sale cause of the down average compare to the Mubawab market. and also for the rentals or vacation rentals apartments.</p>
@@ -173,7 +173,7 @@ and in term of property type, appartments is the biggest category sold or rent i
 <h3> Dashboard number 3 </h3
 <p> If I want to invest my money, I can easily choose where and from which platform I can buy for a lower price with the same features. </p>
 <br/>
-![Capture d’écran 2024-06-03 233027](https://github.com/afandigit/Market-Housing/assets/106676180/d30dab2e-057c-4a4e-aa09-d1ca0e815053)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/d30dab2e-057c-4a4e-aa09-d1ca0e815053"/>
 <br/>
 <h3 style="color:red;">Chart Improvement ... </h3>
 <br/>
@@ -182,33 +182,33 @@ and in term of property type, appartments is the biggest category sold or rent i
 <p>I reduced the noise level and used the data storytelling rule to improve the transmission of messages to the audience in less than 5 seconds.</p>
 <h4 style="color:red;"> From this chart </h4>
 <br/>
-![Capture d’écran 2024-06-09 124326](https://github.com/afandigit/Market-Housing/assets/106676180/dc54e7ef-11d4-4a7e-a78b-1cae9ab4447d)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/dc54e7ef-11d4-4a7e-a78b-1cae9ab4447d"/>
 <br/>
 <h4 style="color:red;"> To this chart </h4>
 <br/>
-![Capture d’écran 2024-06-09 124412](https://github.com/afandigit/Market-Housing/assets/106676180/3af10d41-c902-419e-a0b4-a258f95dc147)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/3af10d41-c902-419e-a0b4-a258f95dc147"/>
 <br/>
 <h4 style="color:red;"> To this chart </h4>
 <br/>
-![Capture d’écran 2024-06-09 124512](https://github.com/afandigit/Market-Housing/assets/106676180/4f229a78-a647-46ab-bc9b-e19bc2a45505)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/4f229a78-a647-46ab-bc9b-e19bc2a45505"/>
 <br/><br/>
 <h3> Dashboard number 4 </h3>
-![Capture d’écran 2024-06-03 233336](https://github.com/afandigit/Market-Housing/assets/106676180/a7d40856-9e66-4628-ab16-f19bf99bc77b)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/a7d40856-9e66-4628-ab16-f19bf99bc77b"/>
 
 
 <br/><br/>
 <h3> Dashboard number 5 </h3>
-![Capture d’écran 2024-06-03 233420](https://github.com/afandigit/Market-Housing/assets/106676180/04af35c6-f207-4fe7-a757-71fc0cc64478)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/04af35c6-f207-4fe7-a757-71fc0cc64478"/>)
 
 
 <br/><br/>
 <h3> Dashboard number 6 </h3>
-![Capture d’écran 2024-06-03 234639](https://github.com/afandigit/Market-Housing/assets/106676180/4ae8f922-1d8a-4a70-b7b0-8277b511d16e)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/4ae8f922-1d8a-4a70-b7b0-8277b511d16e"/>
 
 
 <br/><br/>
 <h3> Dashboard number 6 </h3>
-![Capture d’écran 2024-06-03 234803](https://github.com/afandigit/Market-Housing/assets/106676180/1800867a-acf6-4748-a5eb-16bd67d67110)
+<img src="https://github.com/afandigit/Market-Housing/assets/106676180/1800867a-acf6-4748-a5eb-16bd67d67110)"/>
 
 <br/><br/>
 <h3> For more details, and if you would like to try out the above dashboards interactively, please download the PowerBI file provided in the files section above ...</h3>
