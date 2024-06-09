@@ -141,11 +141,13 @@ and in term of property type, appartments is the biggest category sold or rent i
 <br/>
 * The majority of properties have a surface area between 50 m² and 175 m².
 <br/>
-![téléchargement (2)](https://github.com/afandigit/Market-Housing/assets/106676180/ca22cafb-6a2b-49f1-8e9e-0d3bd9c687b3)
+
+![télécharg](https://github.com/afandigit/Market-Housing/assets/106676180/ca22cafb-6a2b-49f1-8e9e-0d3bd9c687b3)
 
 * The average room number in this dataset is:
 <br/>
-![téléchargement (3)](https://github.com/afandigit/Market-Housing/assets/106676180/6c326945-3f2d-4231-b212-786d3f4fbb4e)
+
+![téléchar](https://github.com/afandigit/Market-Housing/assets/106676180/6c326945-3f2d-4231-b212-786d3f4fbb4e)
 
 <h3> Dashboard number 1 </h3>
 <p> In this dashboard, i compare the statistics measures between the two website Avito and Mubawab, including Max sale of a specific type of real etate, in our case here for <b>apartments</b> per website and per location, but in our case here we just select the max sale of apartments in all Morocco that have the surface betwwen 100 and 200 m².</p>
