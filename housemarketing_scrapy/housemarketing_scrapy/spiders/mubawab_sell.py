@@ -2,13 +2,10 @@ import scrapy
 from housemarketing_scrapy.items import MubawabItem
 from scrapy.loader import ItemLoader
 
-class MubawabSpider(scrapy.Spider):
-    name = "mubawab"
+class MubawabSellSpider(scrapy.Spider):
+    name = "mubawab_sell"
     allowed_domains = ["www.mubawab.ma"]
-    # start_urls = ["https://www.mubawab.ma/fr/sc/appartements-a-vendre"]
-    # start_urls = ["https://www.mubawab.ma/fr/cc/immobilier-vacational"]
-    start_urls = ["https://www.mubawab.ma/fr/cc/immobilier-a-louer"]
-
+    start_urls = ["https://www.mubawab.ma/fr/sc/appartements-a-vendre"]
 
     def parse(self, response):
 
@@ -56,6 +53,7 @@ class MubawabSpider(scrapy.Spider):
         l = ItemLoader(item=MubawabItem(), selector=response)
 
         l.add_value('advertisement_url', response.url)
+        l.add_value('advertisement_type', "sell")
 
         try:
             l.add_xpath('title', '//h1[@class="searchTitle"]')
@@ -91,28 +89,12 @@ class MubawabSpider(scrapy.Spider):
             l.add_xpath('features_list', '//div[@class="adMainFeatureContent"]//p')
         except:
             l.add_value('features_list', '')
+
+        l.add_value('website_name', 'mubawab')
+            
         
         
 
         yield l.load_item()
-
-
-        # annonce_details = response.css("div.minDivider")
-        # ad_title = annonce_details.xpath("//h1[@class='searchTitle']/text()").get()
-        # ad_price = annonce_details.xpath("//h3[@class='orangeTit']/text()").get()
-        # ad_location = annonce_details.xpath("//h3[@class='greyTit']/text()").get()
-        # details_description_data = annonce_details.xpath("//div[@class='disFlex adDetails']//span//text()").getall() 
-        # complete_description = annonce_details.xpath("//div[@class='blockProp']/p").get()
-        # features_list_data = annonce_details.xpath("//div[@class='adMainFeatureContent']//p/text()").getall()
-        # yield {
-        #     "advertisement_url": response.url,
-        #     "title": ad_title,
-        #     "publication_date": house_advertisement__publication_date.get(),
-        #     "price": ad_price,
-        #     "location" : ad_location,
-        #     "description" : ";".join(details_description_data),
-        #     "complete_description" : complete_description,
-        #     "features_list" : ";".join(features_list_data),
-        # }
 
         

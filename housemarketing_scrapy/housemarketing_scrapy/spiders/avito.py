@@ -41,6 +41,7 @@ class AvitoSpider(scrapy.Spider):
         # button.click()
         
         l.add_value('advertisement_url', response.url)
+        l.add_value('advertisement_type', "none")
         l.add_xpath('title', '//div[@class="sc-1g3sn3w-8 ePtCCn"]//h1')
         l.add_xpath('price', '//div[@class="sc-1g3sn3w-8 ePtCCn"]//p')
         l.add_xpath('publication_date', '//div[@class="sc-1g3sn3w-7 bNWHpB"]//time')
@@ -50,5 +51,6 @@ class AvitoSpider(scrapy.Spider):
         # print(response.xpath('//div[@class="sc-1g3sn3w-7 bNWHpB"]//svg[@aria-labelledby="MapPinFillTitleID"]/following-sibling::span').get()) -- check if we can grap 'svg' element using selenuim
         l.add_xpath('complete_description', '//div[@class="sc-1g3sn3w-16 fDMtTb"]//p')
         l.add_xpath('features_list', '//div[@class="sc-qmn92k-0 cjptpz"]//span')
+        l.add_value('website_name', 'avito')
 
         yield l.load_item()

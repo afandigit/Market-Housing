@@ -8,6 +8,7 @@ def remove_useless_charcaters(value):
 class MubawabItem(scrapy.Item):
 
     advertisement_url       = scrapy.Field(output_processor = TakeFirst())
+    advertisement_type       = scrapy.Field(output_processor = TakeFirst())
     title                   = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = TakeFirst())
     price                   = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = TakeFirst())
     publication_date        = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = TakeFirst())
@@ -15,11 +16,14 @@ class MubawabItem(scrapy.Item):
     description             = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = Join(separator=';'))
     complete_description    = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = TakeFirst())
     features_list           = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = Join(separator=';'))
+    website_name            = scrapy.Field(output_processor = TakeFirst())
+
 
 
 class AvitoItem(scrapy.Item):
 
     advertisement_url       = scrapy.Field(output_processor = TakeFirst())
+    advertisement_type       = scrapy.Field(output_processor = TakeFirst())
     title                   = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = TakeFirst())
     price                   = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = TakeFirst())
     publication_date        = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = TakeFirst())
@@ -27,3 +31,4 @@ class AvitoItem(scrapy.Item):
     description             = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = Join(separator=';'))
     complete_description    = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = TakeFirst())
     features_list           = scrapy.Field(input_processor = MapCompose(remove_useless_charcaters, remove_tags) , output_processor = Join(separator=';'))
+    website_name            = scrapy.Field(output_processor = TakeFirst())
