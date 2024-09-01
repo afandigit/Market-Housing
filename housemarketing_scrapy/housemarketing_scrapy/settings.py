@@ -1,15 +1,24 @@
 # for Chrome driver 
 from shutil import which
+import os
+import dotenv
+
+dotenv.load_dotenv()
+
 BOT_NAME = "housemarketing_scrapy"
+
+FEEDS = {
+    "s3://scrapy-playbook/%(name)s/%(name)s_%(time)s.csv": {
+    "format": "csv",
+    }
+}
+
+AWS_ACCESS_KEY_ID = os.environ["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_ACCESS_KEY = os.environ["AWS_SECRET_ACCESS_KEY"]
+
 
 SPIDER_MODULES = ["housemarketing_scrapy.spiders"]
 NEWSPIDER_MODULE = "housemarketing_scrapy.spiders"
-
-# FEEDS = {
-#         'data.json' : {
-#             'format' : 'json'
-#             }
-#     }
 
 SELENIUM_DRIVER_NAME = 'chrome'
 SELENIUM_DRIVER_EXECUTABLE_PATH = which('chromedriver')
